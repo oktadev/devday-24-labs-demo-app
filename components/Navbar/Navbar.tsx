@@ -1,6 +1,5 @@
 'use client'
 
-import { useState } from "react";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -18,6 +17,9 @@ import { Menu } from 'lucide-react'
 import { ModeToggle } from "./ModeToggle";
 import { buttonVariants } from '@/components/ui/button'
 import Link from 'next/link'
+import { Claims } from '@auth0/nextjs-auth0'
+import { useState } from 'react'
+import UserMenu from '@/components/Navbar/UserMenu'
 
 interface RouteProps {
   href: string;
@@ -31,7 +33,11 @@ const routeList: RouteProps[] = [
   }
 ];
 
-export const Navbar = () => {
+interface Props {
+  user?: Claims;
+}
+
+export const Navbar = ({ user } : Props) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   return (
     <header className="sticky border-b-[1px] top-0 z-40 w-full bg-white dark:border-b-slate-700 dark:bg-background">
@@ -82,23 +88,7 @@ export const Navbar = () => {
                       {label}
                     </Link>
                   ))}
-                  <Link
-                    rel="noreferrer noopener"
-                    href="/api/auth/login"
-                    target="_blank"
-                    className={`border ${buttonVariants({ variant: "secondary" })}`}
-                  >
-                    Log In
-                  </Link>
-
-                  <Link
-                    rel="noreferrer noopener"
-                    href="/api/auth/signup"
-                    target="_blank"
-                    className={`border ${buttonVariants({ variant: "default" })}`}
-                  >
-                    Sign Up
-                  </Link>
+                  <UserMenu user={user} />
                 </nav>
               </SheetContent>
             </Sheet>
@@ -121,23 +111,7 @@ export const Navbar = () => {
           </nav>
 
           <div className="hidden md:flex gap-2">
-            <Link
-              rel="noreferrer noopener"
-              href="/api/auth/login"
-              target="_blank"
-              className={`border ${buttonVariants({ variant: "secondary" })}`}
-            >
-              Log In
-            </Link>
-
-            <Link
-              rel="noreferrer noopener"
-              href="/api/auth/signup"
-              target="_blank"
-              className={`border ${buttonVariants({ variant: "default" })}`}
-            >
-              Sign Up
-            </Link>
+            <UserMenu user={user} />
 
             <ModeToggle />
           </div>

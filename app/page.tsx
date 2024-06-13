@@ -29,12 +29,12 @@ export default function Home() {
           </p>
 
           <div className="space-y-4 md:space-y-0 md:space-x-4">
-            <Link
+            <a
               href="/api/auth/signup"
               className={`border w-full md:w-1/3 ${buttonVariants({ variant: "default" })}`}
             >
               Get Started
-            </Link>
+            </a>
 
             <a
               rel="noreferrer noopener"
