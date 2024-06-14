@@ -8,7 +8,6 @@ interface Props {
 }
 
 export default function UserMenu({ user } : Props) {
-  console.log(user);
   if (user) {
     return (
       <DropdownMenu>

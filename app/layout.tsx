@@ -5,12 +5,17 @@ import { cn } from '@/lib/utils'
 import { ThemeProvider } from '@/components/ThemeProvider/ThemeProvider'
 import { Navbar } from '@/components/Navbar/Navbar'
 import { getSession } from '@auth0/nextjs-auth0'
+import { Toaster } from '@/components/ui/toaster'
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Dev Days Labs Demo App",
+  title: {
+    template: "%s | Dev Days Labs Demo App",
+    default: "Dev Days Labs Demo App"
+  },
   description: "Learn Identity (name on the works) is an educative web platform designed to bridge the gap between identity experts and eager students.",
+  applicationName: "Test",
 };
 
 export default async function RootLayout({
@@ -34,8 +39,11 @@ export default async function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Navbar user={session?.user} />
+          <header>
+            <Navbar user={session?.user} />
+          </header>
           {children}
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>

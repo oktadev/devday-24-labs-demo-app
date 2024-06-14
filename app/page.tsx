@@ -1,7 +1,11 @@
 import { buttonVariants } from '@/components/ui/button'
+import { getSession } from '@auth0/nextjs-auth0'
 import Link from 'next/link'
+import InviteForm from '@/components/InviteForm/InviteForm'
 
-export default function Home() {
+export default async function Home() {
+  const session = await getSession();
+
   return (
     <main>
       <section className="container grid lg:grid-cols-2 place-items-center py-20 md:py-32 gap-10">
@@ -13,7 +17,6 @@ export default function Home() {
             </span>{" "}
               from the world's greatest
             </h1>{" "}
-            for{" "}
             <h2 className="inline">
             <span
               className="inline bg-gradient-to-r from-[#61DAFB] via-[#1fc0f1] to-[#03a3d7] text-transparent bg-clip-text">
@@ -29,12 +32,18 @@ export default function Home() {
           </p>
 
           <div className="space-y-4 md:space-y-0 md:space-x-4">
-            <a
-              href="/api/auth/signup"
-              className={`border w-full md:w-1/3 ${buttonVariants({ variant: "default" })}`}
-            >
-              Get Started
-            </a>
+            {session?.user ? (
+              <Link href="/catalog" className={`border w-full md:w-1/3 ${buttonVariants({ variant: "default" })}`}>
+                To the Catalog
+              </Link>
+            ) : (
+              <a
+                href="/api/auth/signup"
+                className={`border w-full md:w-1/3 ${buttonVariants({ variant: "default" })}`}
+              >
+                Get Started
+              </a>
+            )}
 
             <a
               rel="noreferrer noopener"
@@ -47,6 +56,13 @@ export default function Home() {
               Github Repository
             </a>
           </div>
+
+          {session && (
+            <div className="space-y-4 md:space-y-0 border-t pt-8">
+              <h2 className="scroll-m-20 text-3xl font-semibold tracking-tight first:mt-0 mb-4">Invite your friends</h2>
+              <InviteForm />
+            </div>
+          )}
         </div>
 
         {/* Hero cards sections */}

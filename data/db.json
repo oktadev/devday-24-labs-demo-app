@@ -1,0 +1,357 @@
+{
+  "courses": [{
+    "slug": "identity-concepts",
+    "title": "Identity For People in a Hurry",
+    "description": "Learn Identity one minute at a time",
+    "level": "beginner",
+    "lessons": [{
+      "slug": "what-is-a-jwt",
+      "title": "What is a JWT?",
+      "description": "In this video Developer Advocate Will Johnson explain what a JWT (JSON Web Token) is and how it works.Identity in a Minute is a series of short videos design...",
+      "atoms": [{
+        "semantic_type": "youtube",
+        "content": {
+          "video_id": "uEvALBBr26U"
+        }
+      }]
+    }, {
+      "slug": "saml-vs-oauth-20",
+      "title": "SAML vs OAuth 2.0",
+      "description": "In this video developer advocate Will Johnson explains the differences between SAML and OAuth 2.0Identity in a Minute is a series of short videos designed to...",
+      "atoms": [{
+        "semantic_type": "youtube",
+        "content": {
+          "video_id": "97du5BVh0RM"
+        }
+      }]
+    }, {
+      "slug": "what-are-refresh-tokens",
+      "title": "What are Refresh Tokens?",
+      "description": "In this video Will explains what refresh tokens are, and the role they play in maintaining secure authentication processes. Learn how refresh tokens relate t...",
+      "atoms": [{
+        "semantic_type": "youtube",
+        "content": {
+          "video_id": "xUmTOSFwSEc"
+        }
+      }]
+    }, {
+      "slug": "what-is-authentication",
+      "title": "What is Authentication?",
+      "description": "Discover how authentication verifies your identity, granting you secure access to your online accounts.Identity in a Minute is a series of short videos desig...",
+      "atoms": [{
+        "semantic_type": "youtube",
+        "content": {
+          "video_id": "WcguhLUxKKI"
+        }
+      }]
+    }, {
+      "slug": "what-is-fido2",
+      "title": "What is FIDO2?",
+      "description": "In this video Carla explains what FIDO2 is. FIDO, which stands for Fast Identity Online, introduces a new era of secure and user-friendly authentication meth...",
+      "atoms": [{
+        "semantic_type": "youtube",
+        "content": {
+          "video_id": "kWCQshmL22U"
+        }
+      }]
+    }, {
+      "slug": "what-is-an-id-token",
+      "title": "What is an ID Token?",
+      "description": "In this video Developer Advocate Will Johnson explains what ID tokens are and their role in secure authentication. Identity in a Minute is a series of short ...",
+      "atoms": [{
+        "semantic_type": "youtube",
+        "content": {
+          "video_id": "kQjmcEWhdOc"
+        }
+      }]
+    }, {
+      "slug": "what-is-openid-connect",
+      "title": "What is OpenID Connect? (OIDC)",
+      "description": "Do you know what OpenID Connect is? OpenID Connect is a protocol that uses OAuth2 to implement an authentication flow. Learn more about OIDC in this short vi...",
+      "atoms": [{
+        "semantic_type": "youtube",
+        "content": {
+          "video_id": "ksSv9XoE2_A"
+        }
+      }]
+    }, {
+      "slug": "what-is-saml",
+      "title": "What is SAML?",
+      "description": "In this video developer advocate Will Johnson explains what SAML is and how it works.Identity in a Minute is a series of short videos designed to educate dev...",
+      "atoms": [{
+        "semantic_type": "youtube",
+        "content": {
+          "video_id": "hSE2ho8vqLk"
+        }
+      }]
+    }, {
+      "slug": "what-is-mfa",
+      "title": "What is MFA?",
+      "description": "In this video Carla explains what a Multi-Factor Authentication (MFA) is and how it works.",
+      "atoms": [{
+        "semantic_type": "youtube",
+        "content": {
+          "video_id": "ixVBbW3uXkE"
+        }
+      }]
+    }, {
+      "slug": "what-are-passkeys",
+      "title": "What are Passkeys?",
+      "description": "Curious about passkeys and their role in digital security? Okta Developer Advocate Carla explains passkeys and their importance in safeguarding our digital i...",
+      "atoms": [{
+        "semantic_type": "youtube",
+        "content": {
+          "video_id": "OJejlD17Vjc"
+        }
+      }]
+    }, {
+      "slug": "what-is-passwordless",
+      "title": "What is Passwordless?",
+      "description": "In this video, Developer Advocate Will Johnson explains passwordless authentication. Learn how this revolutionary approach eliminates the need for traditiona...",
+      "atoms": [{
+        "semantic_type": "youtube",
+        "content": {
+          "video_id": "yHYBXYYyif0"
+        }
+      }]
+    }, {
+      "slug": "what-is-a-security-key",
+      "title": "What is a Security Key?",
+      "description": "In an era of increasing cyber threats and data breaches, understanding the importance of security keys is paramount. In this video, Carla explains what a sec...",
+      "atoms": [{
+        "semantic_type": "youtube",
+        "content": {
+          "video_id": "lSuN4GU7938"
+        }
+      }]
+    }, {
+      "slug": "what-is-webauthn",
+      "title": "What is WebAuthn?",
+      "description": "In this video, Will explains WebAuthn, the web authentication standard that enhances user security and convenience. Learn how WebAuthn eliminates the relianc...",
+      "atoms": [{
+        "semantic_type": "youtube",
+        "content": {
+          "video_id": "eUhT4djaH1Y"
+        }
+      }]
+    }, {
+      "slug": "what-is-an-access-token",
+      "title": "What is an access token?",
+      "description": "An ongoing series of 60-second shorts that describe key concepts in modern identity management and auth.",
+      "atoms": [{
+        "semantic_type": "youtube",
+        "content": {
+          "video_id": "nYa0YmKPFsU"
+        }
+      }]
+    }, {
+      "slug": "what-are-cookies",
+      "title": "What are cookies?",
+      "description": "Web cookies are bits of data in a text format that get stored in a browser and read by a web server.Websites use cookies to remember information about users....",
+      "atoms": [{
+        "semantic_type": "youtube",
+        "content": {
+          "video_id": "xCcPIvdrnPE"
+        }
+      }]
+    }, {
+      "slug": "what-is-an-idp",
+      "title": "What is an Identity Provider?? (IdP)",
+      "description": "Do you know what an Identity Provider is? In this episode of Identity in a Minute our developer advocate Will Johnson explains what an IdP is gives an exampl...",
+      "atoms": [{
+        "semantic_type": "youtube",
+        "content": {
+          "video_id": "bPANCffXy0w"
+        }
+      }]
+    }, {
+      "slug": "what-is-fga",
+      "title": "What is FGA?",
+      "description": "In this episode of Identity in a Minute, Auth0 by Okta developer advocate Carla fills us in on what FGA is. FGA stands for Fine-Grained-Authorization and it’...",
+      "atoms": [{
+        "semantic_type": "youtube",
+        "content": {
+          "video_id": "V6o2A_NrGlw"
+        }
+      }]
+    }, {
+      "slug": "what-is-iam",
+      "title": "What is IAM?",
+      "description": "IAM stands for Identity and Access Management and provides control over user validation and resource access.IAM ensures that the right people access the righ...",
+      "atoms": [{
+        "semantic_type": "youtube",
+        "content": {
+          "video_id": "MwBCBOdlDBw"
+        }
+      }]
+    }, {
+      "slug": "what-are-device-bound-passkeys",
+      "title": "What are device-bound passkeys?",
+      "description": "A device-bound passkey is a type of passkey that is, well… bound to a single device. Think of security keys like a Yubikey, these are typically device-bound ...",
+      "atoms": [{
+        "semantic_type": "youtube",
+        "content": {
+          "video_id": "Rg-Q-NuXL2w"
+        }
+      }]
+    }, {
+      "slug": "what-is-delegated-authorization",
+      "title": "What is Delegated Authorization",
+      "description": "Do you know what delegated authorization is? OAuth2 was created specifically to handle the delegated authorization scenario. For more Identity in a Minute co...",
+      "atoms": [{
+        "semantic_type": "youtube",
+        "content": {
+          "video_id": "VHD1mI1-cSQ"
+        }
+      }]
+    }, {
+      "slug": "what-is-device-authorization-flow",
+      "title": "What is device authorization flow?",
+      "description": "That process of continuing the login with an external device is known as Device Authorization Flow as it was drafted in OAuth 2.0.It involves a device you wa...",
+      "atoms": [{
+        "semantic_type": "youtube",
+        "content": {
+          "video_id": "Yx5H9fM4uo8"
+        }
+      }]
+    }, {
+      "slug": "what-is-client-credentials-flow",
+      "title": "What is the Client Credentials Flow?",
+      "description": "Imagine this: your CLI needs to interact with a protected API but your CLI can’t simply make a request to the API, it first needs an access token. Protected ...",
+      "atoms": [{
+        "semantic_type": "youtube",
+        "content": {
+          "video_id": "Ne083WglevU"
+        }
+      }]
+    }, {
+      "slug": "what-is-a-discoverable-credential",
+      "title": "What is a Discoverable Credential?",
+      "description": "A Discoverable Credential is a FIDO2/WebAuthn credential that can be well… discovered by the relying party, or the server you’re trying to authenticate to, w...",
+      "atoms": [{
+        "semantic_type": "youtube",
+        "content": {
+          "video_id": "p6DJ2tS7qFw"
+        }
+      }]
+    }, {
+      "slug": "what-are-synced-passkeys",
+      "title": "What are synced passkeys?",
+      "description": "Do you know what a synced passkey is? In this short we'll explain what synced passkeys are and how they are used.#identity #security #programming #passkey",
+      "atoms": [{
+        "semantic_type": "youtube",
+        "content": {
+          "video_id": "NwOUi-d3Ylw"
+        }
+      }]
+    }, {
+      "slug": "what-is-progressive-profiling",
+      "title": "What is Progressive Profiling?",
+      "description": "Progressive profiling is the process of incrementally collecting additional information about your users as they engage with your application. For example, y...",
+      "atoms": [{
+        "semantic_type": "youtube",
+        "content": {
+          "video_id": "qh1NKbyaaJ4"
+        }
+      }]
+    }, {
+      "slug": "what-are-biometrics",
+      "title": "What are Biometrics?",
+      "description": "Biometrics are the measurement and analysis of someone’s physical and behavioral characteristics. These characteristics can be classified into two types:Phys...",
+      "atoms": [{
+        "semantic_type": "youtube",
+        "content": {
+          "video_id": "fOtJd3CJVtc"
+        }
+      }]
+    }, {
+      "slug": "what-are-sessions",
+      "title": "What are Sessions?",
+      "description": "",
+      "atoms": [{
+        "semantic_type": "youtube",
+        "content": {
+          "video_id": "n4FKXa5pHCA"
+        }
+      }]
+    }]
+  }, {
+    "slug": "confused-developer",
+    "title": "The Confused Developer",
+    "description": "Explaining the most confusing aspects of identity, for developers.",
+    "level": "intermediate",
+    "lessons": [{
+        "slug": "understanding-the-nuances-of-passkeys",
+        "title": "Understanding the nuances of passkeys",
+        "description": "Passkeys replace passwords for user authentication, provide a better user experience, offer more security and phishing resistance. However, there are some su...",
+        "atoms": [
+          {
+            "semantic_type": "youtube",
+            "content": {
+              "video_id": "NAz2Oi2-N7Y"
+            }
+          }
+        ]
+      }, {
+      "slug": "id-tokens-vs-access-tokens",
+      "title": "ID Tokens VS Access Tokens: What's the Difference?",
+      "description": "ID Tokens vs Access Tokens. What are they and when do you use them? How do they differ? Where do they come from? We'll briefly cover OAuth 2.0 and OpenID Con...",
+      "atoms": [
+        {
+          "semantic_type": "youtube",
+          "content": {
+            "video_id": "vVM1Tpu9QB4"
+          }
+        }
+      ]
+    }, {
+      "slug": "understanding-access-control",
+      "title": "Understanding the concepts of access control",
+      "description": "Permissions, privileges, and scopes in the context of authorization, access control, and delegated authorization - what's the difference? Understanding the b...",
+      "atoms": [
+        {
+          "semantic_type": "youtube",
+          "content": {
+            "video_id": "vULfBEn8N7E"
+          }
+        }
+      ]
+    }, {
+      "slug": "url-uris-urns",
+      "title": "The relationship between URLs, URIs, and URNs",
+      "description": "URLs are a common concept, especially if you are on the web. But do really know what a URL is? Also, have you heard of URIs and URNs? In this video @jesstemp...",
+      "atoms": [
+        {
+          "semantic_type": "youtube",
+          "content": {
+            "video_id": "iUzyy8CnPVY"
+          }
+        }
+      ]
+    }, {
+      "slug": "encoding-vs-encryption-vs-hashing",
+      "title": "Encoding IS NOT Encryption! And neither is hashing.",
+      "description": "Confusing encryption, encoding and hashing may have disastrous consequences - especially since it can cause misunderstandings in the way security is implemen...",
+      "atoms": [
+        {
+          "semantic_type": "youtube",
+          "content": {
+            "video_id": "PNbQ1Ix71Gc"
+          }
+        }
+      ]
+    }, {
+      "slug": "http-status-code",
+      "title": "What HTTP status code should you use? 401? 403? 404?",
+      "description": "Most APIs follow RESTful conventions, which means that an API response must include information to make the client aware of what is going on and what the ser...",
+      "atoms": [
+        {
+          "semantic_type": "youtube",
+          "content": {
+            "video_id": "LqrxfllNdCg"
+          }
+        }
+      ]
+    }]
+  }]
+}

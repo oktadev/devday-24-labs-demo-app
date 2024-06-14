@@ -26,19 +26,33 @@ interface RouteProps {
   label: string;
 }
 
-const routeList: RouteProps[] = [
-  {
-    href: "/courses",
-    label: "Courses",
-  }
-];
-
 interface Props {
   user?: Claims;
 }
 
 export const Navbar = ({ user } : Props) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+
+  const routeList: RouteProps[] = user ? [
+    {
+      href: "/catalog",
+      label: "Catalog",
+    },
+    {
+      href: "/my-courses",
+      label: "My Courses",
+    },
+    {
+      href: "/instructor-dashboard",
+      label: "Instructor Dashboard",
+    }
+  ] : [
+    {
+      href: "/catalog",
+      label: "Catalog",
+    }
+  ];
+
   return (
     <header className="sticky border-b-[1px] top-0 z-40 w-full bg-white dark:border-b-slate-700 dark:bg-background">
       <NavigationMenu className="mx-auto">
@@ -97,7 +111,7 @@ export const Navbar = ({ user } : Props) => {
           {/* desktop */}
           <nav className="hidden md:flex gap-2">
             {routeList.map((route: RouteProps, i) => (
-              <a
+              <Link
                 rel="noreferrer noopener"
                 href={route.href}
                 key={i}
@@ -106,7 +120,7 @@ export const Navbar = ({ user } : Props) => {
                 })}`}
               >
                 {route.label}
-              </a>
+              </Link>
             ))}
           </nav>
 
