@@ -1,6 +1,6 @@
 # Dev Day 24 Labs Demo App
 
-Learn Identity  is an educative web platform designed to bridge the gap between identity experts and eager students. The application allows for instructors to generate identity related courses and for students to enroll and learn from them.
+Learn Identity is an educative Next.js web application designed to bridge the gap between identity experts and eager students. The application allows for instructors to generate identity related courses and for students to enroll and learn from them.
 
 **But Learn Identity needs your help!** The application as it stands is not secure, anyone can access and edit any content. We have received complains from users who want to get rid of passwords, but that’s all we offer right now. Admins are eage to enforce instructors would to use additional authentication factors such as OTP and security keys.
 
@@ -79,3 +79,39 @@ Whether you're building a B2B SaaS or a B2C application, in this lab, you'll lea
 -   **Explore Best Practices** and strategies for implementing invitations as part of registration workflows that help mitigate many of the common vulnerabilities from an attack surface perspective.
 
 [![Invite workflow using the Auth0 Organizations Invitation feature](https://img.shields.io/badge/Visit-%20Invite%20workflow%20using%20the%20Auth0%20Organizations%20Invitation%20feature-3f59e4?style=for-the-badge)](#todo-add-link)
+
+## Project Set up
+
+To get started with the project, follow the steps below:
+
+1. Clone the repository: Navigate to the desired directory on your computer via Terminal or Command-Line, and enter the following command:
+```
+git clone https://github.com/auth0-developer-hub/devday-24-labs-demo-app.git
+```
+
+2. Move into the cloned directory:
+
+```
+cd devday-24-labs-demo-app
+```
+
+3. Install the required dependencies:
+
+```
+npm install
+```
+
+(Note: This requires Node.js and npm to be installed on your machine.)
+
+4. Set up the environment variables: You will find a `.env.example` file in the root directory. Create a new file `.env` and copy over the contents from `.env.example` file. Fill in the appropriate values.
+
+If you are not sure how to set this up, please visit the [Pre-Lab (Mandatory): Project Setup](#todo-add-link)
+
+5. Run the project: Enter the following command in the terminal:
+
+```
+npm start
+```
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+6. Happy Coding!
