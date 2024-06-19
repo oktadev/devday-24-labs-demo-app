@@ -14,7 +14,7 @@ export default async function CatalogPage() {
   const courses = await DataAPI.getCourses();
   const user = (await getSession())?.user
 
-  //FIXME: complete the Forms for Action lab to get the user's assigned experience
+  //FIXME: complete the "Beyond Login: Personalize and Protect with Auth0 Forms" lab to get the user's assigned experience
   const recommendedCourses = await DataAPI.getRecommendedCourses("beginner");
 
   return (
@@ -25,7 +25,7 @@ export default async function CatalogPage() {
         <AlertCircle className="h-4 w-4"/>
         <AlertTitle>Heads up!</AlertTitle>
         <AlertDescription>
-          Complete the "Beyond Login: Personalize and Protect with Auth0 Forms for Actions" guide to create an onboarding form to capture the user's current experience level
+          Complete the "Beyond Login: Personalize and Protect with Auth0 Forms" guide to create an onboarding form to capture the user's current experience level
           and filter the recommended courses based on their selection.
         </AlertDescription>
       </Alert>

@@ -3,7 +3,6 @@ import 'server-only';
 import db from './db.json'
 import { Course, Lesson } from '@/data/models'
 import { getSession } from '@auth0/nextjs-auth0'
-import { ActionResponse } from '@/app/actions'
 
 async function getCourses(): Promise<Course[]> {
   return db.courses;

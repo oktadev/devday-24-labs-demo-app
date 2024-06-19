@@ -56,17 +56,17 @@ Dive into the world of granular permissions and ensure that the right people hav
 
 [![Fine-Grained Permissions with FGA: Securing Access to Courses and Content](https://img.shields.io/badge/Visit-%20Fine%20Grained%20Permissions%20with%20FGA%3A%20Securing%20Access%20to%20Courses%20and%20Content-3f59e4?style=for-the-badge)](#todo-add-link)
 
-### Beyond Login: Personalize and Protect with Auth0 Forms for Actions
+### Beyond Login: Personalize and Protect with Auth0 Forms
 
-Transform your authentication experience! Join us for a hands-on exploration of Auth0 Forms for Actions, a new tool that empowers you to seamlessly integrate custom forms and logic into your login and signup flows. In this lab, you'll:
+Transform your authentication experience! Join us for a hands-on exploration of Auth0 Forms, a new tool that empowers you to seamlessly integrate custom forms and logic into your login and signup flows. In this lab, you'll:
 
--   **Discover the Power of Forms for Actions:** Learn how this feature lets you gather valuable user data, present terms and conditions, or create multi-step registration processes -- all within the secure Auth0 environment.
+-   **Discover the Power of Forms:** Learn how this feature lets you gather valuable user data, present terms and conditions, or create multi-step registration processes -- all within the secure Auth0 environment.
 
 -   **Craft a User Profiling Form:** Design a form to capture additional information from new users (interests, experience levels, etc.) to personalize their onboarding and course recommendations.
 
 -   **Explore Best Practices:** Discuss strategies for designing user-friendly forms that enhance the registration and login process while protecting user privacy.
 
-[![Beyond Login: Personalize and Protect with Auth0 Forms for Actions](https://img.shields.io/badge/Visit-%20Beyond%20Login%3A%C2%A0Personalize%20and%20Protect%20with%20Auth0%20Forms%20for%20Actions-3f59e4?style=for-the-badge)](#todo-add-link)
+[![Beyond Login: Personalize and Protect with Auth0 Forms](https://img.shields.io/badge/Visit-%20Beyond%20Login%3A%C2%A0Personalize%20and%20Protect%20with%20Auth0%20Forms-3f59e4?style=for-the-badge)](#todo-add-link)
 
 ### Invite Workflow Using the Auth0 Organizations Invitation Feature
 
