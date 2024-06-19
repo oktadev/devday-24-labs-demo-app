@@ -10,7 +10,7 @@ type ActionResponse<T> = {
   data?: T;
 }
 
-export async function buyCourse(courseSlug: string): Promise<ActionResponse<undefined>> {
+export async function enrollToCourse(courseSlug: string): Promise<ActionResponse<undefined>> {
   const session = await getSession();
   if (!session) {
     return {
@@ -24,7 +24,7 @@ export async function buyCourse(courseSlug: string): Promise<ActionResponse<unde
 
   return {
     success: true,
-    message: 'Course purchased successfully',
+    message: 'You are now enrolled in the course',
   }
 }
 

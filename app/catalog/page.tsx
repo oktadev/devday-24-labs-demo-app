@@ -1,6 +1,6 @@
 import { DataAPI } from '@/data/data'
 import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
-import BuyButton from '@/app/catalog/BuyButton'
+import EnrollButton from '@/app/catalog/EnrollButton'
 import type { Metadata } from 'next'
 import { AlertCircle } from 'lucide-react'
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert'
@@ -42,7 +42,7 @@ export default async function CatalogPage() {
                 <CardDescription>{course.description}</CardDescription>
               </CardHeader>
               <CardFooter>
-                <BuyButton course={course}/>
+                <EnrollButton course={course}/>
               </CardFooter>
             </Card>
           ))}
@@ -60,7 +60,7 @@ export default async function CatalogPage() {
                 <CardDescription>{course.description}</CardDescription>
               </CardHeader>
               <CardFooter>
-                <BuyButton course={course}/>
+                <EnrollButton course={course}/>
               </CardFooter>
             </Card>
           ))}

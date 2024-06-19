@@ -4,19 +4,19 @@ import { useToast } from '@/components/ui/use-toast'
 import { Button } from '@/components/ui/button'
 import { Course } from '@/data/models'
 import { useRouter } from 'next/navigation'
-import { buyCourse } from '@/app/actions'
+import { enrollToCourse } from '@/app/actions'
 
 type Props = {
   course: Course;
 }
 
-export default function BuyButton({ course }: Props) {
+export default function EnrollButton({ course }: Props) {
   const { toast } = useToast();
   const router = useRouter();
 
   return (
     <Button onClick={async () => {
-      const result = await buyCourse(course.slug)
+      const result = await enrollToCourse(course.slug)
       if (result.success) {
         toast({
           title: result.message,
@@ -30,7 +30,7 @@ export default function BuyButton({ course }: Props) {
         });
       }
     }}>
-      Buy
+      Enroll
     </Button>
   )
 }
