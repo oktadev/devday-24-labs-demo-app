@@ -68,7 +68,7 @@ Transform your authentication experience! Join us for a hands-on exploration of
 
 [![Beyond Login: Personalize and Protect with Auth0 Forms for Actions](https://img.shields.io/badge/Visit-%20Beyond%20Login%3A%C2%A0Personalize%20and%20Protect%20with%20Auth0%20Forms%20for%20Actions-3f59e4?style=for-the-badge)](#todo-add-link)
 
-### Invite workflow using the Auth0 Organizations Invitation feature
+### Invite Workflow Using the Auth0 Organizations Invitation Feature
 
 Whether you're building a B2B SaaS or a B2C application, in this lab, you'll learn how to leverage the Member Invitation workflow provided by Auth0 Organizations to make onboarding users a whole lot easier!
 
@@ -78,7 +78,7 @@ Whether you're building a B2B SaaS or a B2C application, in this lab, you'll lea
 
 -   **Explore Best Practices** and strategies for implementing invitations as part of registration workflows that help mitigate many of the common vulnerabilities from an attack surface perspective.
 
-[![Invite workflow using the Auth0 Organizations Invitation feature](https://img.shields.io/badge/Visit-%20Invite%20workflow%20using%20the%20Auth0%20Organizations%20Invitation%20feature-3f59e4?style=for-the-badge)](#todo-add-link)
+[![Invite Workflow Using the Auth0 Organizations Invitation Feature](https://img.shields.io/badge/Visit-%20Invite%20Workflow%20Using%20the%20Auth0%20Organizations%20Invitation%20Feature-3f59e4?style=for-the-badge)](#todo-add-link)
 
 ## Project Set up
 

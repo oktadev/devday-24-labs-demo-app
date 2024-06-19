@@ -36,7 +36,7 @@ export async function sendInvite(email: string): Promise<ActionResponse<undefine
     }
   }
 
-  //FIXME: complete the "Invite workflow using the Auth0 Organizations Invitation feature" to grant the user access to the course
+  //FIXME: complete the "Invite Workflow Using the Auth0 Organizations Invitation Feature" to grant the user access to the course
 
   return {
     success: false,
