@@ -1,14 +1,24 @@
-# Dev Day 24 Labs Demo App
+# Welcome to the Dev Days Labs Experience
 
-Learn Identity is an educative Next.js web application designed to bridge the gap between identity experts and eager students. The application allows for instructors to generate identity related courses and for students to enroll and learn from them.
+We are excited to have you join us on this journey to enhance your knowledge and skills in identity management, authentication, and authorization using Auth0. This series of hands-on labs will guide you through securing and improving the **Learn Identity** application.
 
-**But Learn Identity needs your help!** The application as it stands is not secure, anyone can access and edit any content. We have received complains from users who want to get rid of passwords, but that’s all we offer right now. Admins are eage to enforce instructors would to use additional authentication factors such as OTP and security keys.
+**Learn Identity** is an educational Next.js web application designed to bridge the gap between identity experts and eager students. The application allows instructors to generate identity-related courses and for students to enroll and learn from them.
+
+**But Learn Identity needs your help!** The application, as it stands, is not secure; anyone can access and edit any content. We have received complaints from users who want to get rid of passwords, but that’s all we offer right now. Admins are eager to enforce that instructors use additional authentication factors such as OTP and security keys.
 
 By downloading the application and completing the labs, you'll help secure and improve the experience for the application.
 
 So what are you waiting for, complete any of the following labs to get you started:
 
 ## Hands-on labs
+
+The Dev Days Labs Experience is structured into a series of progressive and independent labs, each focusing on different aspects of identity management and security. These labs will guide you through a variety of hands-on tasks, from setting up your development environment to implementing advanced authentication mechanisms.
+
+As you work through the labs, you will incrementally enhance the security and functionality of the Learn Identity application. You will start by establishing a solid foundation with basic authentication and gradually progress to more advanced topics such as multifactor authentication, fine-grained access control, and passwordless login methods.
+
+By the end of the series, you will have a secure and well-protected application, ready to handle a variety of authentication and authorization challenges.
+
+Whether you are new to Auth0 or looking to deepen your knowledge, these labs will equip you with practical skills and insights that you can apply to your own projects. Let's embark on this exciting journey to secure and enhance the Learn Identity application together!
 
 ### Pre-Lab (Mandatory): Project Setup
 
