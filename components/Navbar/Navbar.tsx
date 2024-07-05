@@ -37,24 +37,28 @@ export const Navbar = ({ user } : Props) => {
     {
       href: "/catalog",
       label: "Catalog",
-    },
-    {
+    }, {
       href: "/my-courses",
       label: "My Courses",
-    },
-    {
+    }, {
       href: "/instructor-dashboard",
       label: "Instructor Dashboard",
-    }
+    }, {
+      href: "/labs",
+      label: "Labs",
+    },
   ] : [
     {
       href: "/catalog",
       label: "Catalog",
+    }, {
+      href: "/labs",
+      label: "Labs",
     }
   ];
 
   return (
-    <header className="sticky border-b-[1px] top-0 z-40 w-full bg-white dark:border-b-slate-700 dark:bg-background">
+    <div className="sticky border-b-[1px] top-0 z-40 w-full bg-white dark:border-b-slate-700 dark:bg-background">
       <NavigationMenu className="mx-auto">
         <NavigationMenuList className="container h-14 px-4 w-screen flex justify-between ">
           <NavigationMenuItem>
@@ -132,6 +136,6 @@ export const Navbar = ({ user } : Props) => {
           </div>
         </NavigationMenuList>
       </NavigationMenu>
-    </header>
+    </div>
   );
 };
