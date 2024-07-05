@@ -25,7 +25,7 @@ async function getMyCourses(): Promise<Course[]> {
 async function getCourse(slug: string): Promise<Course | undefined> {
   const session = await getSession();
   if (!session) {
-    return undefined;
+    return;
   }
   const userId = session.user['sub'];
 
@@ -42,10 +42,22 @@ async function getCourseLesson(courseSlug: string, lessonSlug: string): Promise<
   return course.lessons.find(lesson => lesson.slug === lessonSlug);
 }
 
+async function enrollToCourse(courseSlug: string) {
+  const session = await getSession();
+  if (!session) {
+    throw Error('You are not logged in!');
+  }
+
+  const userId = session.user['sub'];
+  
+  //FIXME: complete the "Fine-Grained Permissions with FGA: Securing Access to Courses and Content" to grant the user access to the course
+}
+
 export const DataAPI = {
   getCourses,
   getRecommendedCourses,
   getMyCourses,
   getCourse,
   getCourseLesson,
+  enrollToCourse
 }

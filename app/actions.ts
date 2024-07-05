@@ -3,6 +3,7 @@ import "server-only";
 
 
 import { getSession } from '@auth0/nextjs-auth0'
+import { DataAPI } from "@/data/data";
 
 type ActionResponse<T> = {
   success: boolean;
@@ -11,17 +12,15 @@ type ActionResponse<T> = {
 }
 
 export async function enrollToCourse(courseSlug: string): Promise<ActionResponse<undefined>> {
-  const session = await getSession();
-  if (!session) {
+  try {
+    DataAPI.enrollToCourse(courseSlug);
+  } catch (error) {
     return {
       success: false,
-      message: 'You are not logged in!'
+      message: "Error enrolling you to the course, are you logged in?"
     }
   }
-  const userId = session.user['sub'];
-
-  //FIXME: complete the "Fine-Grained Permissions with FGA: Securing Access to Courses and Content" to grant the user access to the course
-
+  
   return {
     success: true,
     message: 'You are now enrolled in the course',
