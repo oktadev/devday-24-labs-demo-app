@@ -24,8 +24,12 @@ export default async function MyCoursesPage() {
       <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl my-4">
         My Courses
       </h1>
+      <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl my-4">
+        My Courses
+      </h1>
 
       <Alert variant="destructive">
+        <AlertCircle className="h-4 w-4" />
         <AlertCircle className="h-4 w-4" />
         <AlertTitle>Heads up!</AlertTitle>
         <AlertDescription>
