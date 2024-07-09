@@ -1,5 +1,6 @@
 {
   "courses": [{
+    "id": "identity-concepts",
     "slug": "identity-concepts",
     "title": "Identity For People in a Hurry",
     "description": "Learn Identity one minute at a time",
@@ -276,6 +277,7 @@
       }]
     }]
   }, {
+    "id": "confused-developer",
     "slug": "confused-developer",
     "title": "The Confused Developer",
     "description": "Explaining the most confusing aspects of identity, for developers.",
