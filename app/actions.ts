@@ -1,8 +1,8 @@
 "use server";
 import "server-only";
 
-import { pipeline, Text2TextGenerationSingle } from "@xenova/transformers";
 import { DataAPI } from "@/data/data";
+import { ChatbotMessage, getAIResponse } from "@/data/ai";
 
 type ActionResponse<T> = {
   success: boolean;
@@ -11,27 +11,23 @@ type ActionResponse<T> = {
 };
 
 export async function askChatbot(
-  question: string
+  chat: ChatbotMessage[]
 ): Promise<ActionResponse<string>> {
-  const textGenerator = await pipeline(
-    "text2text-generation",
-    "Xenova/LaMini-Flan-T5-77M"
-  );
-  const result = await textGenerator(question);
+  try {
+    const response = await getAIResponse(chat);
 
-  if (!Array.isArray(result) || result.length === 0) {
+    return {
+      success: true,
+      message: "Chatbot response",
+      data: response,
+    };
+  } catch (e) {
     return {
       success: false,
-      message: "Error generating response",
-      data: "Ups, something went wrong",
+      message: "Ups, something went wrong",
+      data: (e as Error).message,
     };
   }
-
-  return {
-    success: true,
-    message: "Chatbot response",
-    data: (result[0] as Text2TextGenerationSingle).generated_text,
-  };
 }
 
 export async function enrollToCourse(
