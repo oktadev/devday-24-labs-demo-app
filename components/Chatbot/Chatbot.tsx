@@ -78,6 +78,14 @@ export default function Chatbot() {
               secure this chatbot!
             </AlertDescription>
           </Alert>
+          <Alert className="mb-4">
+            <AlertCircle className="h-4 w-4" />
+            <AlertTitle>Warning!</AlertTitle>
+            <AlertDescription>
+              This chatbot is for demo purposes only, it uses a local model to
+              run and the results may not be as accurate as larger LLM models.
+            </AlertDescription>
+          </Alert>
           <div className="h-96 flex flex-col overflow-y-scroll space-y-4">
             {chatbotState.messages.map((message, index) => (
               <div
