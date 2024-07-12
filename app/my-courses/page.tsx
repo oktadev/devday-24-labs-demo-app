@@ -25,18 +25,6 @@ export default async function MyCoursesPage() {
         My Courses
       </h1>
 
-      <Alert variant="destructive">
-        <AlertCircle className="h-4 w-4" />
-        <AlertCircle className="h-4 w-4" />
-        <AlertTitle>Heads up!</AlertTitle>
-        <AlertDescription>
-          By default you&apos;ll be able to see all available courses here, to
-          add fine-grained authorization, and filter to only those courses you
-          have access to, please visit the &quot;Fine-Grained Permissions with
-          FGA: Securing Access to Courses and Content&quot;.
-        </AlertDescription>
-      </Alert>
-
       {courses.length === 0 && (
         <section className="mt-8">
           <Card>
