@@ -2,12 +2,33 @@
 import "server-only";
 
 import { DataAPI } from "@/data/data";
+import { ChatbotMessage, getAIResponse } from "@/data/ai";
 
 type ActionResponse<T> = {
   success: boolean;
   message: string;
   data?: T;
 };
+
+export async function askChatbot(
+  chat: ChatbotMessage[]
+): Promise<ActionResponse<string>> {
+  try {
+    const response = await getAIResponse(chat);
+
+    return {
+      success: true,
+      message: "Chatbot response",
+      data: response,
+    };
+  } catch (e) {
+    return {
+      success: false,
+      message: "Ups, something went wrong",
+      data: (e as Error).message,
+    };
+  }
+}
 
 export async function enrollToCourse(
   courseSlug: string
