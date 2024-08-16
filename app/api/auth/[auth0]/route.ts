@@ -6,7 +6,7 @@ export const GET = handleAuth({
   login: handleLogin((request) => {
     if (request.url) {
       const url = new URL(request.url);
-      const searchParams = url.searchParams /*new URLSearchParams(url.search);*/
+      const searchParams = url.searchParams;
       const organization = searchParams.get("organization");
       const invitation = searchParams.get("invitation");
 
