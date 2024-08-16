@@ -22,14 +22,3 @@ export const GET = handleAuth({
     return({});   
   })
 });
-
-/*
-export default handleAuth({
-  signup: handleLogin({ authorizationParams: { screen_hint: 'signup' } }),
-  invite: handleLogin({
-    authorizationParams: {
-      invitation: req.query.invitation
-    }
-  })
-});
-*/
