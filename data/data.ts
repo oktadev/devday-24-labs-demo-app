@@ -4,6 +4,7 @@ import db from "./db.json";
 import { Course, Lesson } from "@/data/models";
 import { getSession } from "@auth0/nextjs-auth0";
 import { fgaClient, stripObjectName } from "@/lib/fga";
+import { ListObjectsResponse } from "@openfga/sdk";
 
 async function getCourses(): Promise<Course[]> {
   return db.courses;
@@ -20,25 +21,16 @@ async function getMyCourses(): Promise<Course[]> {
   }
   const userId = session.user["sub"];
 
-  const { responses } = await fgaClient.batchCheck(
-    db.courses.map((course) => {
-      return {
-        user: `user:${userId}`,
-        object: `course:${course.id}`,
-        relation: "can_read",
-      };
-    })
-  );
+  // List all courses that the user is enrolled in
+  const response: ListObjectsResponse = await fgaClient.listObjects({
+    user: `user:${userId}`,
+    type: 'course',
+    relation: 'can_read',
+  })
 
-  return responses
-    .map(
-      (check) =>
-        check.allowed &&
-        db.courses.find(
-          (course) => course.id === stripObjectName(check._request.object)
-        )
-    )
-    .filter(Boolean) as Course[];
+  return response.objects.map((response: string) => {
+    return db.courses.find((course) => course.id === stripObjectName(response))
+  }).filter(Boolean) as Course[];
 }
 
 async function getCourse(slug: string): Promise<Course | undefined> {
@@ -56,8 +48,8 @@ async function getCourse(slug: string): Promise<Course | undefined> {
 
   const { allowed } = await fgaClient.check({
     user: `user:${userId}`,
-    relation: "can_read",
     object: `course:${course.id}`,
+    relation: "can_read",
   });
 
   if (allowed) {
@@ -102,8 +94,8 @@ async function enrollToCourse(courseSlug: string) {
     fgaClient.writeTuples([
       {
         user: `user:${userId}`,
-        relation: "student",
         object: `course:${course.id}`,
+        relation: "student",
       },
     ]);
   }
