@@ -17,11 +17,11 @@ export default function EnrollButton({ course }: Props) {
   return (
     <Button onClick={async () => {
       const result = await enrollToCourse(course.slug)
+      
       if (result.success) {
         toast({
           title: result.message,
         });
-        router.push(`/my-courses/${course.slug}`);
       } else {
         toast({
           title: result.message,
