@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Basic Authentication Definition",
+    "input": "What is authentication?",
+    "expectedOutput": "authentication verifying identity",
+    "criteria": "contains"
+  },
+  {
+    "name": "Authorization Definition",
+    "input": "Define authorization in the context of security.",
+    "expectedOutput": "authorization determines access resources actions",
+    "criteria": "contains"
+  },
+  {
+    "name": "Identity Verification Methods",
+    "input": "List some methods used for identity verification.",
+    "expectedOutput": "passwords biometrics multi-factor authentication",
+    "criteria": "contains"
+  },
+  {
+    "name": "Multi-Factor Authentication",
+    "input": "What is MFA and why is it important?",
+    "expectedOutput": "multi-factor authentication verification factors increasing security",
+    "criteria": "contains"
+  },
+  {
+    "name": "Single Sign-On Explanation",
+    "input": "Explain what Single Sign-On (SSO) is.",
+    "expectedOutput": "single sign-on access multiple applications one login",
+    "criteria": "contains"
+  },
+  {
+    "name": "Specific Terminology Test",
+    "input": "What does the acronym SSO stand for in the context of authentication?",
+    "expectedOutput": "Single Sign-On",
+    "criteria": "contains"
+  },
+  {
+    "name": "Security Best Practice",
+    "input": "Why is using multi-factor authentication considered a security best practice?",
+    "expectedOutput": "increases security",
+    "criteria": "contains"
+  },
+  {
+    "name": "Authentication Methods",
+    "input": "Name at least two methods of authentication.",
+    "expectedOutput": "Single Sign-On Multi-factor authentication",
+    "criteria": "contains"
+  },
+  {
+    "name": "Citation Test",
+    "input": "Provide information about authentication and include a citation.",
+    "expectedOutput": "",
+    "criteria": "citation"
+  }
+]
