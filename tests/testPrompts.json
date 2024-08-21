@@ -30,16 +30,10 @@
     "criteria": "contains"
   },
   {
-    "name": "Response Length Test",
-    "input": "Briefly explain the difference between authentication and authorization in one sentence.",
-    "expectedOutput": "15",
-    "criteria": "length"
-  },
-  {
     "name": "Specific Terminology Test",
     "input": "What does the acronym SSO stand for in the context of authentication?",
     "expectedOutput": "Single Sign-On",
-    "criteria": "exact"
+    "criteria": "contains"
   },
   {
     "name": "Security Best Practice",

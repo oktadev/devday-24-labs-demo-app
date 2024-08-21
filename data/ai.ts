@@ -96,7 +96,7 @@ export async function getAIResponse(chat: ChatbotMessage[]): Promise<string> {
   const searchResults = await vectorStore.asRetriever({
     searchType: "mmr",
     searchKwargs: { fetchK: 3 },
-    k: 2, // Increased from 1 to 2 for more context
+    k: 2,
   }).getRelevantDocuments(userQuery);
 
   console.log("Search results:", searchResults);
@@ -166,22 +166,27 @@ Remember to cite your sources and only use the information provided above.`,
 
   console.log("Assistant response before processing:", assistantResponse);
 
-   // Post-processing to include URLs in citations
-   let processedResponse = assistantResponse.replace(/\[(\d+)\]/g, (match, p1) => {
+  // Process citations
+  const processedResponse = processCitations(assistantResponse, searchResults);
+
+
+  console.log("Final response:", processedResponse);
+
+  return processedResponse;
+}
+
+// Function to process citations
+function processCitations(response: string, searchResults: any[]): string {
+  // TODO: Implement citation processing logic here
+  // This function should:
+  // 1. Replace citation numbers with URLs
+  let processedResponse = assistantResponse.replace(/\[(\d+)\]/g, (match, p1) => {
     const index = parseInt(p1) - 1;
     if (index >= 0 && index < searchResults.length) {
       return `[${p1}: ${searchResults[index].metadata.source}]`;
     }
     return match;
   });
-
-  // Add a default citation if none are present
-  if (!/\[(\d+):/.test(processedResponse)) {
-    const defaultSource = searchResults[0]?.metadata.source || "https://auth0.com/docs";
-    processedResponse += ` [1: ${defaultSource}] (Note: This citation was added automatically as the response lacked proper citations)`;
-  }
-
-  console.log("Final response:", processedResponse);
-
-  return processedResponse;
+  // Return the processed response
+  return response;
 }
