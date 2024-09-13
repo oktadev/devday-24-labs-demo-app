@@ -12,23 +12,26 @@ export const metadata: Metadata = {
 
 export default async function CatalogPage() {
   const courses = await DataAPI.getCourses();
-  const user = (await getSession())?.user
+  const user = (await getSession())?.user;
+  const userLevel = user['https://myapp.example.com/userLevel']
+
+  
 
   //FIXME: complete the "Beyond Login: Personalize and Protect with Auth0 Forms" lab to get the user's assigned experience
-  const recommendedCourses = await DataAPI.getRecommendedCourses("beginner");
+  const recommendedCourses = await DataAPI.getRecommendedCourses(userLevel);
 
   return (
     <main className="container mt-8">
       <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl my-4">Course Catalog</h1>
 
-      <Alert variant="destructive">
+      {/* <Alert variant="destructive">
         <AlertCircle className="h-4 w-4"/>
         <AlertTitle>Heads up!</AlertTitle>
         <AlertDescription>
           Complete the "Beyond Login: Personalize and Protect with Auth0 Forms" guide to create an onboarding form to capture the user's current experience level
           and filter the recommended courses based on their selection.
         </AlertDescription>
-      </Alert>
+      </Alert> */}
 
       <section className="mt-8">
         <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0 mb-4">Recommended
