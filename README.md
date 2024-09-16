@@ -102,7 +102,7 @@ Join us to master the art of building reliable AI systems, learning to implement
 
 - **Unlock AI Potential** while maintaining stringent control and safety measures.
 
-[![Building Safe & Reliable AI Systems](https://img.shields.io/badge/Building-%20Safe-%20and-%20Reliable-%20AI-%20Systems-3f59e4?style=for-the-badge)](#todo-add-link)
+[![Building Safe & Reliable AI Systems]([https://img.shields.io/badge/Building-%20Safe-%20and-%20Reliable-%20AI-%20Systems-3f59e4?style=for-the-badge](https://img.shields.io/badge/Visit-%20Building%20Safe%20and%20Reliable%20AI%20Systems-3f59e4?style=for-the-badge))](#todo-add-link)
 
 ## Project Set up
 
