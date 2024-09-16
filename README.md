@@ -56,13 +56,13 @@ Protect the knowledge-keepers! Join our hands-on lab and dive into the world of 
 
 Dive into the world of granular permissions and ensure that the right people have access to the right resources. In this hands-on lab, you'll:
 
--   **Discover Auth0 Fine-Grained Authorization (FGA):** Explore how FGA empowers you to define precise access rules for your application, safeguarding your data and user experience.
+- **Discover Auth0 Fine-Grained Authorization (FGA):** Explore how FGA empowers you to define precise access rules for your application, safeguarding your data and user experience.
 
--   **Implement Instructor-Specific Permissions:** Learn how to configure FGA to allow instructors to edit only the courses they have created, preventing unauthorized modifications.
+- **Implement Instructor-Specific Permissions:** Learn how to configure FGA to allow instructors to edit only the courses they have created, preventing unauthorized modifications.
 
--   **Protect Student Access:** Ensure that students can only access the courses they are enrolled in, maintaining the integrity of your learning environment.
+- **Protect Student Access:** Ensure that students can only access the courses they are enrolled in, maintaining the integrity of your learning environment.
 
--   **Explore Best Practices:** Discuss strategies for designing a secure and scalable authorization system using FGA.
+- **Explore Best Practices:** Discuss strategies for designing a secure and scalable authorization system using FGA.
 
 [![Fine-Grained Permissions with FGA: Securing Access to Courses and Content](https://img.shields.io/badge/Visit-%20Fine%20Grained%20Permissions%20with%20FGA%3A%20Securing%20Access%20to%20Courses%20and%20Content-3f59e4?style=for-the-badge)](#todo-add-link)
 
@@ -70,11 +70,11 @@ Dive into the world of granular permissions and ensure that the right people hav
 
 Transform your authentication experience! Join us for a hands-on exploration of Auth0 Forms, a new tool that empowers you to seamlessly integrate custom forms and logic into your login and signup flows. In this lab, you'll:
 
--   **Discover the Power of Forms:** Learn how this feature lets you gather valuable user data, present terms and conditions, or create multi-step registration processes -- all within the secure Auth0 environment.
+- **Discover the Power of Forms:** Learn how this feature lets you gather valuable user data, present terms and conditions, or create multi-step registration processes -- all within the secure Auth0 environment.
 
--   **Craft a User Profiling Form:** Design a form to capture additional information from new users (interests, experience levels, etc.) to personalize their onboarding and course recommendations.
+- **Craft a User Profiling Form:** Design a form to capture additional information from new users (interests, experience levels, etc.) to personalize their onboarding and course recommendations.
 
--   **Explore Best Practices:** Discuss strategies for designing user-friendly forms that enhance the registration and login process while protecting user privacy.
+- **Explore Best Practices:** Discuss strategies for designing user-friendly forms that enhance the registration and login process while protecting user privacy.
 
 [![Beyond Login: Personalize and Protect with Auth0 Forms](https://img.shields.io/badge/Visit-%20Beyond%20Login%3A%C2%A0Personalize%20and%20Protect%20with%20Auth0%20Forms-3f59e4?style=for-the-badge)](#todo-add-link)
 
@@ -82,19 +82,34 @@ Transform your authentication experience! Join us for a hands-on exploration of
 
 Whether you're building a B2B SaaS or a B2C application, in this lab, you'll learn how to leverage the Member Invitation workflow provided by Auth0 Organizations to make onboarding users a whole lot easier!
 
--   **Discover the flexibility of Invitation** to bring customers into your application(s) in a flexible yet safe and secure manner - especially when it comes to building collaborations that operate in a team-oriented fashion.
+- **Discover the flexibility of Invitation** to bring customers into your application(s) in a flexible yet safe and secure manner - especially when it comes to building collaborations that operate in a team-oriented fashion.
 
--   **Leverage** **Branding** that allows the creation of bespoke email invitations to match the look and feel of your product identity.
+- **Leverage** **Branding** that allows the creation of bespoke email invitations to match the look and feel of your product identity.
 
--   **Explore Best Practices** and strategies for implementing invitations as part of registration workflows that help mitigate many of the common vulnerabilities from an attack surface perspective.
+- **Explore Best Practices** and strategies for implementing invitations as part of registration workflows that help mitigate many of the common vulnerabilities from an attack surface perspective.
 
 [![Invite Workflow Using the Auth0 Organizations Invitation Feature](https://img.shields.io/badge/Visit-%20Invite%20Workflow%20Using%20the%20Auth0%20Organizations%20Invitation%20Feature-3f59e4?style=for-the-badge)](#todo-add-link)
+
+## Building Safe & Reliable AI Systems
+
+Join us to master the art of building reliable AI systems, learning to implement guardrails, reduce hallucinations, and create effective testing suites that ensure your chatbots and AI applications are powerful, safe, and trustworthy.
+
+- **Fortify AI Foundations** by implementing robust architecture and fail-safe mechanisms.
+
+- **Optimize Testing Protocols** by developing systematic approaches to validate AI performance and reliability.
+
+- **Enhance AI Reliability** through iterative refinement and continuous learning processes.
+
+- **Unlock AI Potential** while maintaining stringent control and safety measures.
+
+[![Building Safe & Reliable AI Systems](https://img.shields.io/badge/Building-%20Safe-%20and-%20Reliable-%20AI-%20Systems-3f59e4?style=for-the-badge)](#todo-add-link)
 
 ## Project Set up
 
 To get started with the project, follow the steps below:
 
 1. Clone the repository: Navigate to the desired directory on your computer via Terminal or Command-Line, and enter the following command:
+
 ```
 git clone https://github.com/auth0-developer-hub/devday-24-labs-demo-app.git
 ```
@@ -115,13 +130,14 @@ npm install
 
 4. Set up the environment variables: You will find a `.env.example` file in the root directory. Create a new file `.env` and copy over the contents from `.env.example` file. Fill in the appropriate values.
 
-If you are not sure how to set this up, please visit the [Pre-Lab (Mandatory): Project Setup](#todo-add-link)
+If you are not sure how to set this up, please visit the [Pre-Lab (Mandatory): Project Setup](https://developerday.com/event/labs/setup)
 
 5. Run the project: Enter the following command in the terminal:
 
 ```
 npm start
 ```
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 6. Happy Coding!
