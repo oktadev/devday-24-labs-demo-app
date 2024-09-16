@@ -64,7 +64,7 @@ export default function Chatbot() {
   return (
     <div className="fixed bottom-0 right-0 z-50 mr-4 mb-4">
       <Popover data-side="right">
-        <PopoverTrigger>
+        <PopoverTrigger asChild>
           <Button className="rounded-full h-14 w-14">
             <MessagesSquare />
           </Button>

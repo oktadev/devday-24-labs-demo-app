@@ -123,9 +123,7 @@ export const Navbar = ({ user }: Props) => {
                 <Menu
                   className="flex md:hidden h-5 w-5"
                   onClick={() => setIsOpen(true)}
-                >
-                  <span className="sr-only">Menu Icon</span>
-                </Menu>
+                ></Menu>
               </SheetTrigger>
 
               <SheetContent side={"left"}>
