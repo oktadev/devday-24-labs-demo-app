@@ -92,7 +92,7 @@ export default async function Home() {
 
                   <a
                     rel="noreferrer noopener"
-                    href="https://github.com/auth0-developer-hub/devday-24-labs-demo-app.git"
+                    href="https://github.com/oktadev/devday-24-labs-demo-app"
                     target="_blank"
                     className={`w-full md:w-1/3 ${buttonVariants({
                       variant: "outline",
@@ -104,7 +104,9 @@ export default async function Home() {
 
                 {session && (
                   <div className="space-y-4 md:space-y-0 pt-20">
-                    <h2 className="scroll-m-20 text-3xl font-semibold tracking-tight first:mt-0 mb-4">Invite your friends</h2>
+                    <h2 className="scroll-m-20 text-3xl font-semibold tracking-tight first:mt-0 mb-4">
+                      Invite your friends
+                    </h2>
                     <InviteForm />
                   </div>
                 )}
