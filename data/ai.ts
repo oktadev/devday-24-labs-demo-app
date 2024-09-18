@@ -176,7 +176,7 @@ Remember to cite your sources and only use the information provided above.`,
 }
 
 // Function to process citations
-function processCitations(response: string, searchResults: any[]): string {
+function processCitations(assistantResponse: string, searchResults: any[]): string {
   // TODO: Implement citation processing logic here
   // This function should:
   // 1. Replace citation numbers with URLs
@@ -188,5 +188,5 @@ function processCitations(response: string, searchResults: any[]): string {
     return match;
   });
   // Return the processed response
-  return response;
+  return processedResponse;
 }
