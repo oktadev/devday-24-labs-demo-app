@@ -109,19 +109,7 @@ export async function getAIResponse(chat: ChatbotMessage[]): Promise<string> {
 
   const systemMessage = {
     role: "system",
-    content: `You are a chatbot that answers questions about identity, authentication, and authorization. Rules:
-1. Use ONLY the information from the numbered context below.
-2. Your response MUST be 50 words or less.
-3. Cite sources using [1], [2], etc. after EACH piece of information.
-4. If you can't answer using the context, try to provide a partial answer or related information.
-5. Do not add any information not present in the context.
-6. Your response MUST contain at least one citation in square brackets, like [1].
-
-Context:
-
-${numberedContext}
-
-Remember to cite your sources and only use the information provided above.`,
+    content: `You are a chatbot that answers questions about identity, authentication, and authorization.`,
   };
 
   const messages = [systemMessage, { role: "user", content: userQuery }];
@@ -170,23 +158,17 @@ Remember to cite your sources and only use the information provided above.`,
   const processedResponse = processCitations(assistantResponse, searchResults);
 
 
-  console.log("Final response:", processedResponse);
-
   return processedResponse;
 }
 
 // Function to process citations
 function processCitations(assistantResponse: string, searchResults: any[]): string {
+  let processedResponse = assistantResponse;
+
   // TODO: Implement citation processing logic here
   // This function should:
   // 1. Replace citation numbers with URLs
-  let processedResponse = assistantResponse.replace(/\[(\d+)\]/g, (match, p1) => {
-    const index = parseInt(p1) - 1;
-    if (index >= 0 && index < searchResults.length) {
-      return `[${p1}: ${searchResults[index].metadata.source}]`;
-    }
-    return match;
-  });
-  // Return the processed response
+  // 2. Add a footer with the sources used
+  
   return processedResponse;
 }
