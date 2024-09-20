@@ -104,8 +104,8 @@ export const Navbar = ({ user }: Props) => {
                   fill="currentColor"
                 ></path>
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   d="M275.773 101.111H221.618V91.8647H275.773V101.111Z"
                   fill="currentColor"
                 ></path>
