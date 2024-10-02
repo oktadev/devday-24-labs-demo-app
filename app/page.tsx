@@ -26,17 +26,29 @@ export default async function Home() {
               <path d="M.5 200V.5H200" fill="none" />
             </pattern>
           </defs>
-          <svg x="50%" y={-1} className="overflow-visible fill-gray-50">
+          <svg
+            x="50%"
+            y={-1}
+            className="overflow-visible fill-gray-50 dark:fill-gray-900"
+          >
             <path
               d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z"
               strokeWidth={0}
             />
           </svg>
           <rect
+            fill="url(#1f432ae7-37de-4c0a-a8b0-a6e3b4d44b84)"
+            width="100%"
+            height="100%"
+            strokeWidth={0}
+            className="hidden dark:block"
+          />
+          <rect
             fill="url(#1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84)"
             width="100%"
             height="100%"
             strokeWidth={0}
+            className="dark:hidden"
           />
         </svg>
         <div
@@ -55,6 +67,25 @@ export default async function Home() {
           <div className="mx-auto max-w-7xl px-6 pb-32 pt-14 sm:pt-32 lg:px-8 lg:pt-14">
             <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
               <div className="relative w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
+                <div className="mb-10">
+                  <a
+                    href="https://auth0.com"
+                    className="inline-flex space-x-4 align-middle"
+                    target="_blank"
+                  >
+                    <img
+                      src="auth0_logo_header.svg"
+                      className="hidden dark:block"
+                      alt="Auth0 by Okta"
+                    />
+                    <img
+                      src="auth0_logo_header.svg"
+                      className="dark:hidden"
+                      alt="Auth0 by Okta"
+                    />
+                  </a>
+                </div>
+
                 <h1 className="inline text-5xl md:text-6xl font-bold">
                   <span className="inline bg-gradient-to-r from-[#F596D3] to-[#D247BF] text-transparent bg-clip-text">
                     Learn Identity
@@ -65,10 +96,6 @@ export default async function Home() {
                   </span>{" "}
                   experts
                 </h1>
-                <p className="mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
-                  Learn Identity is an educative web platform designed to bridge
-                  the gap between identity experts and eager students.
-                </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   {session?.user ? (
                     <Link
