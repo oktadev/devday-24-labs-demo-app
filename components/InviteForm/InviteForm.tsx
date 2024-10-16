@@ -20,7 +20,7 @@ export default function InviteForm() {
         <AlertCircle className="h-4 w-4"/>
         <AlertTitle>Heads up!</AlertTitle>
         <AlertDescription>
-          This method is not implemented, please visit the lab "Invite Workflow Using the Auth0 Organizations Invitation Feature" to make this form work!
+          {`This method is not implemented, please visit the lab "Invite Workflow Using the Auth0 Organizations Invitation Feature" to make this form work!`}
         </AlertDescription>
       </Alert>
       <div className="flex space-x-2 mt-4">

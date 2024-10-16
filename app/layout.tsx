@@ -6,7 +6,6 @@ import { ThemeProvider } from "@/components/ThemeProvider/ThemeProvider";
 import { Navbar } from "@/components/Navbar/Navbar";
 import { getSession } from "@auth0/nextjs-auth0";
 import { Toaster } from "@/components/ui/toaster";
-import Chatbot from "@/components/Chatbot/Chatbot";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -41,7 +40,6 @@ export default async function RootLayout({
           </header>
           {children}
           <Toaster />
-          <Chatbot />
         </ThemeProvider>
       </body>
     </html>

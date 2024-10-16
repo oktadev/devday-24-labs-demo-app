@@ -29,8 +29,8 @@ export default async function MyCoursesPage() {
         <AlertCircle className="h-4 w-4"/>
         <AlertTitle>Heads up!</AlertTitle>
         <AlertDescription>
-          By default you'll have access to this dashboard whether you are an instructor or not, complete the "Securing Instructor Accounts with Auth0 Actions and Custom MFA"
-          to validate the user's groups and deny access to those who are not instructors
+          {`By default you'll have access to this dashboard whether you are an instructor or not, complete the "Securing Instructor Accounts with Auth0 Actions and Custom MFA"
+          to validate the user's groups and deny access to those who are not instructors`}
         </AlertDescription>
       </Alert>
 
